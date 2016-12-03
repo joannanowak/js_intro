@@ -27,3 +27,4 @@ xiaomi.nr_seryjny = "#0987654321";
 
 xiaomi.getInfo();
 
+
