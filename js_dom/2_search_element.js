@@ -1,4 +1,5 @@
 "use strict";
+//przypisanie selektora do zmiennej
 
 var div = document.getElementById("parSecond");
 console.log(div);
@@ -14,5 +15,5 @@ var drugiLink =linkiPoKlasie[1];
 console.log(drugiLink);
 
 for (var i =0; i < linkiPoKlasie.length; ++i){
-	console.log(linkiPoKlasie[i] + " to jest link " + (i+1));
+	console.log(linkiPoKlasie[i] + " to jest link " + (i+1))
 }
