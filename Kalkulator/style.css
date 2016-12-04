@@ -1,0 +1,15 @@
+.calculator{
+	width: 30%;
+	
+}
+
+input[type="text"]{
+	width: 72%;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+input[type="button"]{
+	width: 23.7%;
+	margin: 1px, 1px;
+}
