@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Kalkulator odsetek</title>
+
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	
-	
+
+	<div id="kalkulator">
+		<form id="calculator">
+			<label for="wplata_k0">Wpłata (PLN)</label>
+			<input class="text_input" type="text" id="wplata_k0" value="0" />
+			<br>
+			<label for="kapitalizacja_czestotliwosc">Częstotliwość kapitalizacji </label>
+			<select id="kapitalizacja_czestotliwosc">
+				<option value="12" id="1" selected>roczna </option>
+				<option value="4" id="2">kwartalna </option>
+				<option value="1" id="3">miesięczna </option>
+			</select>
+			<br>
+			<label for="stopa_zwrotu">Stopa zwrotu (%) </label>
+			<input class="text_input" type="text" id="stopa_zwrotu" value="0" />
+			<br>
+			<label class="text_input" for="liczba_lat_kapitalizacji">Liczba lat </label>
+			<input type="text" id="liczba_lat_kapitalizacji" value="0" />
+			<br>
+
+			<input type="checkbox" name="podatek_belki" id="podatek_belki" value="0.19">
+			<label for="podatek_belki">Podatek Belki (19%)</label>
+			<br>
+
+			
+		</form>
+		<button onclick="liczOdsetki()"> Oblicz </button>
+	</div>
+
 	<script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
