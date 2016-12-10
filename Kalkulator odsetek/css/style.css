@@ -8,7 +8,9 @@
 input{
 	height: 20px;
 }
-.button{
+button{
 	width: 100px;
+	height: 30px;
 	display: block;
+	background-color: lightgreen;
 }
