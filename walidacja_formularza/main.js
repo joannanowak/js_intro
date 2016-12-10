@@ -6,9 +6,8 @@
 var zgoda_1 = document.getElementById('zgoda-marketingowa-1');
 var zgoda_2 = document.getElementById('zgoda-marketingowa-2');
 var zgoda_all = document.getElementById('wszystkie-zgody');
-zgoda_1.addEventListener("click", validateCheckbox);
-zgoda_2.addEventListener("click", validateCheckbox);
-zgoda_all.addEventListener("click", validateCheckbox);
+
+zgoda_all.addEventListener("change", validateCheckbox);
 
 
 function validateCheckbox() {
