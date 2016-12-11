@@ -14,4 +14,13 @@ $(function(){
 	$(".paragrafnext").after("Dodaje tresc za selektorem");
 	
 	$("strong").remove(); //usuwa tresc ze strongiem
+	
+//	$('#paragraf1').empty();
+	
+//	$(".paragrafnext").css("font-size", "3em");
+//	
+	
+	$(".paragrafnext").css({'font-size': '3em', 'color':'red'});
+	
+	$('h1').addClass('blue');
 });
