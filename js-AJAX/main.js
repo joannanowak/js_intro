@@ -11,7 +11,7 @@ function ajax(options){
 		dataType: options.dataType || 'text'
 	};
 	
-	console.log(options);
+//	console.log(options);
 	
 	function httpSuccess(httpRequest){
 		try {
@@ -40,7 +40,7 @@ function ajax(options){
 			if ( httpSuccess (xml)) {
 				
 				options.onSuccess(xml.responseText);
-				xml = null;
+//				xml = null;
 		
 		}else{
 				options.onError ( xml.statusText );
@@ -55,6 +55,9 @@ function ajax(options){
 }
 
 
+
+
+
 function pobierzDane(event){
 	event.preventDefault;
 	
@@ -66,7 +69,25 @@ function pobierzDane(event){
 			console.log(msg);
 		},
 		onSuccess: function(response){
+//			console.log(response);
+			var jsonObj = JSON.parse(response);
+			console.log(jsonObj);
+			
+			var imie = document.createElement('p');
+			imie.innerHTML = "imie: " +jsonObj.imie;
+			document.body.appendChild(imie);
+			
+			var oczy = document.createElement('p');
+			oczy.innerHTML = "oczy: " +jsonObj.oczy;
+			document.body.appendChild(oczy);
+			
+			var zycie = document.createElement('p');
+			zycie.innerHTML = "zycie: " +jsonObj.zycie;
+			document.body.appendChild(zycie);
+			
 			console.log(response);
+			
+			
 		}
 		
 	} );
